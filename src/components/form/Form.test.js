@@ -6,9 +6,9 @@ import {mount} from 'enzyme'
 
 describe("Basic rendering of form", () =>{
     it("Rendering of form", ()=>{
-        const wrapper = shallow(<Form />)
-        const wrapperValue= wrapper.find(Text)
-        expect(wrapperValue).toBeDefined();
+        const form = shallow(<Form />)
+        const title= form.find(Text)
+        expect(title).toBeDefined();
 
     })
     it("Should render label", () =>{
